@@ -1,0 +1,109 @@
+* ¿Cuáles son los dos valores del tipo de datos booleano? ¿Cómo se escriben?
+True and False 
+
+* ¿Cuáles son los tres operadores booleanos?
+And, or, not
+
+* Escriba una rutina que genere todas las tablas de verdad de cada operador booleano (es decir, cada combinación posible de valores booleanos para cada  operador). A continuación se muestra un ejemplo para el operador or.
+booleanos = [False, True]
+
+#Tabla or
+print ('x/ty/tx or y')  #Los \t son tabuladores
+for x in booleanos:
+  for y in booleanos:
+     print(x, y, x or y, sep = '/t')
+
+print()
+
+
+#Tabla and
+print('x/ty/tx and y')
+for x in booleanos:
+   for y in booleanos:
+      print (x, y, x and y, sep = '/t')
+
+print()
+
+#Tabla not
+print('x/tnot x')
+for x in booleanos:
+  print(x, not x,sep = '/t')
+
+print()
+
+* ¿Cuáles son los seis operadores de comparación?
+==, <, >, <=,>=, !=
+
+* ¿Cuál es la diferencia entre el operador igual y el operador de asignación?
+El operador igual se utiliza cuando estamos haciendo alguna operación matematica y el operador de asignación es cuando estamos definiendo una variable 
+
+* Explique qué es una condición y dónde la usaría.
+Es un comando que te permite continuar o parar el codigo se cumplen las requerimeintos que se designaron.
+Se podria utilizar por ejemplo para el acceso con contraseña utilizando el comando "if"
+
+* ¿Qué puede hacer si su programa está atascado en un bucle infinito?
+Se puede poner control+C 2 veces o escribir top en otra pestaña, escribir k o kill y despues el 9 (por el protocolo 9)o kill+("número del programa")
+
+* ¿Cuál es la diferencia entre romper y continuar?
+Cuando se pone un continuar, el programa se regresa al inicio
+Y cuando ponemos un break, el programa se detiene completamente
+
+*¿Cuál es la diferencia entre rango (10), rango (0, 10) y rango (0, 10, 1) en un bucle for?
+Esto se refiere al numero de ciclos que realiza en un intervalo
+rango (10)Hace un ciclo de 10 lecturas
+rango (0,10) Hn ciclo comienza en 0 y termina en 10, haciendo un total de 11
+rango (0,10,1) Hace 10 ciclos en donde la primera entrada da el valor inicial,la segunda entrada cuantos ciclos hará y la tercera el intervalo en el que los hará
+
+* Escribe un programa corto que imprima los primeros "N" números y la suma de mismos "N" usando un bucle for. Luego escribe un programa equivalente que imprima los números del 1 al 10 usando un bucle while.
+#For
+suma = 0
+num = int(input("Número"))
+
+for i in range(num+1):
+  sum = sum + i
+print("suma de número hasta")
+print(num)
+print("es:")
+print(suma) 
+
+#While
+i = 0
+suma = 0
+while i<n:
+     print (i)
+     i = i +1
+     suma = suma +i
+
+print(suma) 
+
+* Un ciclo que imprima los primeros M números impares.
+num = int(input("Número"))
+i = 1
+while i <= num:
+  print(i)
+  i = (i*2)+1
+print("Fin") 
+
+
+* Escriba un programa que calcule los primeros N términos de la serie de fibonacci.
+num = int(input("¿Cuantos terminos necesitas?"))
+x=0
+y=1
+for i in range(num):
+   print(x)
+   t=y #Se va haciendo un bucle
+   y=x+y #Def una función para la sucesión
+   x=t  #Tomando valores de f(n-1) + f(n-2) 
+
+
+* Escriba un programa que calcule el factorial de un número N.
+num = int(input("Número"))
+fac = 1
+for i in range(num):
+  fac = fac*num
+  num = num-1
+print(fac)
+
+
+
+ 
